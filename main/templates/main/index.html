@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html class="no-js" lang="ru">
 
@@ -8,30 +10,22 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <!-- Place favicon.ico in the root directory -->
-
     <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/gijgo.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
     <header>
         <div class="header-area ">
             <div class="header-top_area">
@@ -53,7 +47,7 @@
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-3">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="{% url 'index' %}">
                                     
                                 </a>
                             </div>
@@ -62,8 +56,8 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a  href="index.html">Главная</a></li>
-                                        <li><a href="contact.html">Контакты</a></li>
+                                        <li><a  href="{% url 'index' %}">Главная</a></li>
+                                        <li><a href="{% url 'contact' %}">Контакты</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -85,13 +79,13 @@
                     <div class="col-lg-5 col-md-6">
                         <div class="slider_text">
                             <h3>Мы заботимся о<br>Животных<span></span></h3>
-                            <a href="contact.html" class="boxed-btn4">Написать нам</a>
+                            <a href="{% url 'contact' %}" class="boxed-btn4">Написать нам</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="dog_thumb d-none d-lg-block">
-                <img src="img/banner/dog.png" alt="">
+                <img src="{% static 'img/dog.png' %}" alt="">
             </div>
         </div>
     </div>
@@ -110,9 +104,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6">
                     <div class="single_service">
-                         <div class="service_thumb service_icon_bg_1 d-flex align-items-center justify-content-center">
+                         <div class="service_thumb service_icon_bg_1.png d-flex align-items-center justify-content-center">
                              <div class="service_icon">
-                                 <img src="img/service/service_icon_1.png" alt="">
+                                 <img src="{% static 'img/service_icon_1.png' %}" alt="">
                              </div>
                          </div>
                          <div class="service_content text-center">
@@ -125,7 +119,7 @@
                     <div class="single_service active">
                          <div class="service_thumb service_icon_bg_1 d-flex align-items-center justify-content-center">
                              <div class="service_icon">
-                                 <img src="img/service/service_icon_2.png" alt="">
+                                 <img src="{% static 'img/service_icon_2.png' %}" alt="">
                              </div>
                          </div>
                          <div class="service_content text-center">
@@ -138,7 +132,7 @@
                     <div class="single_service">
                          <div class="service_thumb service_icon_bg_1 d-flex align-items-center justify-content-center">
                              <div class="service_icon">
-                                 <img src="img/service/service_icon_3.png" alt="">
+                                 <img src="{% static 'img/service_icon_3.png' %}" alt="">
                              </div>
                          </div>
                          <div class="service_content text-center">
@@ -158,7 +152,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 col-md-6">
                     <div class="pet_thumb">
-                        <img src="img/about/pet_care.png" alt="">
+                        <img src="{% static 'img/about/pet_care.png' %}" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 offset-lg-1 col-md-6">
@@ -189,7 +183,7 @@
                         <div class="section_title">
                             <h3><span>Нам нужна</span>
                                 ваша помощь!</h3>
-                            <a href="contact.html" class="boxed-btn3">Связаться с нами</a>
+                            <a href="{% url 'contact' %}" class="boxed-btn3">Связаться с нами</a>
                         </div>
                     </div>
                 </div>
@@ -198,7 +192,7 @@
                         <div class="row align-items-center">
                             <div class="col-lg-6 col-md-6">
                                 <div class="single_adapt text-center">
-                                    <img src="img/adapt_icon/1.png" alt="">
+                                    <img src="{% static 'img/adapt_icon/1.png' %}" alt="">
                                     <div class="adapt_content">
                                         <h3 class="counter">343</h3>
                                         <p>Обрели дом</p>
@@ -207,14 +201,14 @@
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="single_adapt text-center">
-                                    <img src="img/adapt_icon/3.png" alt="">
+                                    <img src="{% static 'img/adapt_icon/3.png' %}" alt="">
                                     <div class="adapt_content">
                                         <h3><span class="counter">32</span></h3>
                                         <p>Нуждаются в лечении</p>
                                     </div>
                                 </div>
                                 <div class="single_adapt text-center">
-                                    <img src="img/adapt_icon/2.png" alt="">
+                                    <img src="{% static 'img/adapt_icon/2.png' %}" alt="">
                                     <div class="adapt_content">
                                         <h3><span class="counter">13</span></h3>
                                         <p>Ищут новый дом</p>
@@ -244,7 +238,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single_team">
                         <div class="thumb">
-                            <img src="img/team/1.png" alt="">
+                            <img src="{% static 'img/team/1.png' %}" alt="">
                         </div>
                         <div class="member_name text-center">
                             <div class="mamber_inner">
@@ -257,7 +251,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single_team">
                         <div class="thumb">
-                            <img src="img/team/2.png" alt="">
+                            <img src="{% static 'img/team/2.png' %}" alt="">
                         </div>
                         <div class="member_name text-center">
                             <div class="mamber_inner">
@@ -270,7 +264,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single_team">
                         <div class="thumb">
-                            <img src="img/team/3.png" alt="">
+                            <img src="{% static 'img/team/3.png' %}" alt="">
                         </div>
                         <div class="member_name text-center">
                             <div class="mamber_inner">
@@ -323,7 +317,6 @@
                         <div class="footer_widget">
                             <div class="footer_logo">
                                 <a href="#">
-                                    <img src="img/logo.png" alt="">
                                 </a>
                             </div>
                             <p class="address_text">Ростовская область
@@ -377,33 +370,33 @@
 
 
     <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/gijgo.min.js"></script>
+    <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static "js/vendor/jquery-1.12.4.min.js" %}"></script>
+    <script src="{% static "js/popper.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/owl.carousel.min.js" %}"></script>
+    <script src="{% static "js/isotope.pkgd.min.js" %}"></script>
+    <script src="{% static "js/ajax-form.js" %}"></script>
+    <script src="{% static "js/waypoints.min.js" %}"></script>
+    <script src="{% static "js/jquery.counterup.min.js" %}"></script>
+    <script src="{% static "js/imagesloaded.pkgd.min.js" %}"></script>
+    <script src="{% static "js/scrollIt.js" %}"></script>
+    <script src="{% static "js/jquery.scrollUp.min.js" %}"></script>
+    <script src="{% static "js/wow.min.js" %}"></script>
+    <script src="{% static "js/nice-select.min.js" %}"></script>
+    <script src="{% static "js/jquery.slicknav.min.js" %}"></script>
+    <script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+    <script src="{% static "js/plugins.js" %}"></script>
+    <script src="{% static "js/gijgo.min.js" %}"></script>
 
     <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
+    <script src="{% static "js/contact.js" %}"></script>
+    <script src="{% static "js/jquery.ajaxchimp.min.js" %}"></script>
+    <script src="{% static "js/jquery.form.js" %}"></script>
+    <script src="{% static "js/jquery.validate.min.js" %}"></script>
+    <script src="{% static "js/mail-script.js" %}"></script>
 
-    <script src="js/main.js"></script>
+    <script src="{% static "js/main.js" %}"></script>
     <script>
         $('#datepicker').datepicker({
             iconsLibrary: 'fontawesome',

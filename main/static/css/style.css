@@ -1326,7 +1326,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url(../img/banner/banner.png);
+  background-image: url(/img/banner/banner.png);
 }
 
 /* line 4, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_slider.scss */
@@ -1385,7 +1385,7 @@ h3 {
 
 /* line 30, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
-  color: #ffffff;
+  color: #000000;
   font-family: "Poppins", sans-serif;
   font-size: 75px;
   font-weight: 200;
@@ -1665,8 +1665,10 @@ h3 {
     position: absolute;
     right: 0;
     bottom: 0;
-    border-top: 15px solid #ffffff;
-    border-left: 15px solid #ffffff;
+    border-top: 15px solid
+ #ffffff;
+    border-left: 15px solid
+ #ffffff;
     top: auto;
     width: 50%;
     height: 60%;
@@ -3369,13 +3371,13 @@ h3 {
 
 /* line 18, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_anipat.scss */
 .contact_anipat .contact_text .section_title h3 {
-  color: #fff;
+  color: #000000;
 }
 
 /* line 21, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_anipat.scss */
 .contact_anipat .contact_text .section_title p {
   font-size: 25px;
-  color: #fff;
+  color: #000000;
   line-height: 40px;
   margin-top: 35px;
   margin-bottom: 50px;

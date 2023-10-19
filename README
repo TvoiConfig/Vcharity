@@ -1,3 +1,11 @@
 Админка:
-vlad
-123
+    vlad
+    123
+
+Предустановка:
+    python 3.11.5 с добавлением в path
+    любой IDE (например: VScode)
+    Библиотеки, указанные в requirments.txt
+
+Запуск сервера:
+    python manage.py runserver

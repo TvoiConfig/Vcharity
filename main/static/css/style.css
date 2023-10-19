@@ -205,17 +205,17 @@ h3 {
 
 /* line 128, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_reset.scss */
 .bg-img-1 {
-  background-image: url(../img/slider/slider-img-1.jpg);
+  background-image: url(static/img/slider/slider-img-1.jpg);
 }
 
 /* line 131, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_reset.scss */
 .bg-img-2 {
-  background-image: url(../img/background-img/bg-img-2.jpg);
+  background-image: url(static/img/background-img/bg-img-2.jpg);
 }
 
 /* line 134, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_reset.scss */
 .cta-bg-1 {
-  background-image: url(../img/background-img/bg-img-3.jpg);
+  background-image: url(static/img/background-img/bg-img-3.jpg);
 }
 
 /* line 139, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_reset.scss */
@@ -1326,7 +1326,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url(/img/banner/banner.png);
+  background-image: url(../img/banner/banner.png);
 }
 
 /* line 4, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_slider.scss */
